@@ -1,0 +1,11 @@
+{
+  "manifest_version":4,
+  "type":"extension",
+  "slug":"typed-connector-example",
+  "name":"Typed connector example",
+  "version":"1.0.0",
+  "description":"Demonstrates scoped services, cancellable events and typed context",
+  "platform":["win32","linux","darwin"],
+  "dependencies":[],
+  "injects":{"main":"main.js"}
+}

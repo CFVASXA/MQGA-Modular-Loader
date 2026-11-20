@@ -1,0 +1,13 @@
+node_modules/
+logs/
+data/
+plugins/*
+!plugins/.gitkeep
+!plugins/README.md
+*.log
+*.zip
+*.tmp
+*.bak
+coverage/
+tests/*.log
+tests/legacy-fixtures/src/

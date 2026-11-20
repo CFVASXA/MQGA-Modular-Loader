@@ -1,0 +1,16 @@
+{
+  "name": "mqga",
+  "version": "0.2.0-rewrite.1",
+  "description": "Modular QQNT plugin host with MQGA/LiteLoader compatibility",
+  "main": "src/main.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/core.test.cjs tests/runtime.test.cjs tests/compatibility.test.cjs",
+    "test:legacy": "node --test --test-concurrency=1 tests/loader.test.cjs tests/lifecycle.test.cjs tests/config.test.cjs tests/bridge.test.cjs",
+    "build:renderer": "node scripts/build-renderer.mjs"
+  }
+}

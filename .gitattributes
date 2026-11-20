@@ -1,0 +1,4 @@
+* text=auto eol=lf
+legacy/** -text whitespace=-blank-at-eol
+*.png binary
+*.svg text eol=lf
