@@ -1,7 +1,7 @@
 "use strict";
 const fs = require("node:fs"), path = require("node:path"), os = require("node:os"), vm = require("node:vm");
 const safe = require("../legacy/paths-safe.js");
-const loaderRoot = path.resolve(__dirname, "..");
+const loaderRoot = path.resolve(__dirname, "legacy-fixtures");
 fs.mkdirSync(path.join(loaderRoot,"src"),{recursive:true});
 for (const name of ["hooks","host","main","preload"]) fs.copyFileSync(path.join(__dirname,"../legacy",name+".js"),path.join(loaderRoot,"src",name+".js"));
 fs.copyFileSync(path.join(__dirname,"../src/core/cache.js"),path.join(loaderRoot,"src","module-cache.js"));
