@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
-const safe = require("./legacy-fixtures/src/paths-safe.js");
+const safe = require("../legacy/paths-safe.js");
 const {hooksFixture, hostFixture, loaderRoot, temp} = require("./legacy-helpers.cjs");
 
 test("async IPC returns resolved dialog/install result, not empty Promise object", async()=>{
