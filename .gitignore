@@ -11,3 +11,4 @@ plugins/*
 coverage/
 tests/*.log
 tests/legacy-fixtures/src/
+release/
